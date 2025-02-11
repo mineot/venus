@@ -3,6 +3,7 @@
 @mixin body-mixin($theme) {
   background-color: map.get($theme, 'background');
   color: map.get($theme, 'color');
+  background-image: map.get($theme, 'texture');
   //   font-family: $body-font-family;
   //   font-size: $body-font-size;
   //   line-height: $body-line-height;
