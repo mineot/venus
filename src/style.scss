@@ -1,16 +1,26 @@
-@use 'themes/dark.theme.scss' as th-dark;
-@use 'themes/light.theme.scss' as th-light;
-
-@use 'mixins/body.mixin.scss' as bg-mix;
+@use '~/theme' as theme;
+@use '~element/scaffold.mixin' as scaffold;
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  @include bg-mix.body-mixin(th-dark.$theme);
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
 
-  &.light {
-    @include bg-mix.body-mixin(th-light.$theme);
+  background-image: theme.$bg-texture;
+  background-color: theme.$bg-color;
+  color: theme.$tx-color;
+
+  * {
+    flex: 1;
+  }
+
+  > .scaffold {
+    @include scaffold.scaffold-mixin();
   }
 }

@@ -1,14 +1,27 @@
 {
   "name": "@mineot/venus",
   "version": "0.0.1",
-  "description": "An SCSS library inspired by the goddess Venus.",
+  "description": "Simple and beautyful SCSS library",
   "type": "module",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "author": "Mineot",
+  "license": "MIT",
   "files": [
     "dist"
   ],
+  "keywords": [
+    "scss",
+    "css",
+    "design-system",
+    "frontend",
+    "vite"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mineot/venus.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -20,18 +33,5 @@
     "sass": "^1.84.0",
     "typescript": "^5.7.2",
     "vite": "^6.1.0"
-  },
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mineot/venus.git"
-  },
-  "keywords": [
-    "scss",
-    "css",
-    "design-system",
-    "frontend",
-    "vite"
-  ],
-  "author": "Mineot - mineot@gmail.com"
+  }
 }

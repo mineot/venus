@@ -23,8 +23,12 @@
     /* Paths */
     "baseUrl": ".",
     "paths": {
-      "themes/*": ["src/themes/*"],
-      "mixins/*": ["src/mixins/*"]
+      "@/*": ["src/*"],
+      "~/*": ["src/styles/*"],
+      "~mixin/*": ["src/styles/mixins/*"],
+      "~effect/*": ["src/styles/mixins/effects/*"],
+      "~element/*": ["src/styles/mixins/elements/*"],
+      "~util/*": ["src/styles/mixins/utils/*"]
     }
   },
   "include": ["src"]

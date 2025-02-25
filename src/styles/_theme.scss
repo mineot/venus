@@ -1,0 +1,8 @@
+@use 'sass:color';
+
+$bg-texture: url('/assets/texture.png');
+$bg-color: #000;
+$tx-color: #fff;
+
+$bg-blur: rgba(color.adjust($bg-color, $lightness: 10%), 0.1);
+$blur: 2px;
