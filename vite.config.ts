@@ -6,10 +6,9 @@ export default defineConfig({
     alias: {
       '@': path.resolve(__dirname, 'src'),
       '~': path.resolve(__dirname, 'src/styles'),
-      '~mixin': path.resolve(__dirname, 'src/styles/mixins'),
-      '~effect': path.resolve(__dirname, 'src/styles/mixins/effects'),
-      '~element': path.resolve(__dirname, 'src/styles/mixins/elements'),
-      '~util': path.resolve(__dirname, 'src/styles/mixins/utils'),
+      '~effect': path.resolve(__dirname, 'src/styles/effects'),
+      '~element': path.resolve(__dirname, 'src/styles/elements'),
+      '~util': path.resolve(__dirname, 'src/styles/utils'),
     },
   },
 });

@@ -1,0 +1,16 @@
+@use '~util/responsive' as responsive;
+@use '~effect/glass-effect' as effect;
+
+@mixin aside() {
+  flex: 0;
+
+  @include effect.glassEffect();
+
+  @include responsive.responsive(
+    $large: (),
+    $medium: (),
+    $small: (
+      display: none,
+    )
+  );
+}

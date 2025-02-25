@@ -1,5 +1,5 @@
 @use '~/theme' as theme;
-@use '~element/scaffold.mixin' as scaffold;
+@use '~element/scaffold' as scaffold;
 
 * {
   box-sizing: border-box;
@@ -21,6 +21,6 @@ body {
   }
 
   > .scaffold {
-    @include scaffold.scaffold-mixin();
+    @include scaffold.scaffold();
   }
 }

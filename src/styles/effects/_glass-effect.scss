@@ -1,6 +1,6 @@
 @use '~/theme' as theme;
 
-@mixin glass-effect() {
+@mixin glassEffect() {
   background: theme.$bg-blur;
   backdrop-filter: blur(theme.$blur);
 }

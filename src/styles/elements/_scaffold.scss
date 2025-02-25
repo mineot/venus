@@ -1,0 +1,32 @@
+@use '~util/responsive' as responsive;
+@use '~element/header' as header;
+@use '~element/aside' as aside;
+@use '~element/main' as main;
+
+@mixin scaffold() {
+  display: flex;
+
+  @include responsive.responsive(
+    $large: (
+      flex-direction: row,
+    ),
+    $medium: (
+      flex-direction: row,
+    ),
+    $small: (
+      flex-direction: column,
+    )
+  );
+
+  > header {
+    @include header.header();
+  }
+
+  > aside {
+    @include aside.aside();
+  }
+
+  > main {
+    @include main.main();
+  }
+}
