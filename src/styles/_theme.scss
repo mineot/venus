@@ -1,17 +1,22 @@
-/** TEXTURE */
 $bg-texture: url('/assets/texture.png');
-
-/** COLORS */
 $bg-color: #000;
 $text-color: #fff;
 
-/** GLASS EFFECT */
-$glass-color: $bg-color;
-$glass-lightness: 30%;
-$glass-opacity: 0.1;
-$glass-blur: 2px;
+$glass: (
+  'color': $bg-color,
+  'lightness': 40%,
+  'opacity': 0.1,
+  'blur': 2px,
+);
 
-/** ELEMENTS */
+$scrollbar: (
+  'size': 5px,
+  'color': $text-color,
+  'bar': lightgray,
+  'bar-hover': gray,
+  'cursor': ns-resize,
+);
+
 $elements: (
   'header': (
     'padding': 10px,
