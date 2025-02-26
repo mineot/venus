@@ -1,5 +1,5 @@
-@use '~/theme' as theme;
 @use '~element/scaffold' as scaffold;
+@use '~/theme' as theme;
 
 * {
   box-sizing: border-box;
@@ -14,7 +14,7 @@ body {
 
   background-image: theme.$bg-texture;
   background-color: theme.$bg-color;
-  color: theme.$tx-color;
+  color: theme.$text-color;
 
   * {
     flex: 1;

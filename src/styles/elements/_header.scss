@@ -1,8 +1,14 @@
+@use '~/theme' as theme;
 @use '~util/responsive' as responsive;
 @use '~effect/glass-effect' as effect;
+@use 'sass:map';
 
 @mixin header() {
+  $header: map.get(theme.$elements, 'header');
+  $padding: map.get($header, 'padding');
+
   flex: 0;
+  padding: $padding;
 
   @include effect.glassEffect();
 

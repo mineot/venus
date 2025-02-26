@@ -1,6 +1,10 @@
 @use '~/theme' as theme;
+@use 'sass:color';
 
 @mixin glassEffect() {
-  background: theme.$bg-blur;
-  backdrop-filter: blur(theme.$blur);
+  background: rgba(
+    color.adjust(theme.$glass-color, $lightness: theme.$glass-lightness),
+    theme.$glass-opacity
+  );
+  backdrop-filter: blur(theme.$glass-blur);
 }

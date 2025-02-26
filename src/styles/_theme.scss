@@ -1,8 +1,32 @@
-@use 'sass:color';
-
+/** TEXTURE */
 $bg-texture: url('/assets/texture.png');
-$bg-color: #000;
-$tx-color: #fff;
 
-$bg-blur: rgba(color.adjust($bg-color, $lightness: 10%), 0.1);
-$blur: 2px;
+/** COLORS */
+$bg-color: #000;
+$text-color: #fff;
+
+/** GLASS EFFECT */
+$glass-color: $bg-color;
+$glass-lightness: 30%;
+$glass-opacity: 0.1;
+$glass-blur: 2px;
+
+/** ELEMENTS */
+$elements: (
+  'header': (
+    'padding': 10px 10px,
+  ),
+  'aside': (
+    'padding': 10px 5px,
+  ),
+  'main': (
+    'padding': (
+      'large': 0px 10px 0px 0px,
+      'medium': 0px 10px 0px 0px,
+      'small': 0px 10px 0px 10px,
+    ),
+  ),
+  'scaffold': (
+    'gap': 5px,
+  ),
+);

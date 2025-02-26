@@ -1,3 +1,25 @@
+@use '~/theme' as theme;
+@use '~util/responsive' as responsive;
+@use 'sass:map';
+
 @mixin main() {
+  $main: map.get(theme.$elements, 'main');
+  $padding: map.get($main, 'padding');
+  $padding-small: map.get($padding, 'small');
+  $padding-medium: map.get($padding, 'medium');
+  $padding-large: map.get($padding, 'large');
+
   flex: 1;
+
+  @include responsive.responsive(
+    $large: (
+      padding: $padding-large,
+    ),
+    $medium: (
+      padding: $padding-medium,
+    ),
+    $small: (
+      padding: $padding-small,
+    )
+  );
 }
