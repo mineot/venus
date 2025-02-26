@@ -5,10 +5,15 @@
 
 @mixin aside() {
   $aside: map.get(theme.$elements, 'aside');
+  $width: map.get($aside, 'width');
   $padding: map.get($aside, 'padding');
 
   flex: 0;
   padding: $padding;
+  width: $width;
+  min-width: $width;
+  overflow-x: hidden;
+  overflow-y: auto;
 
   @include effect.glassEffect();
 

@@ -14,19 +14,20 @@ $glass-blur: 2px;
 /** ELEMENTS */
 $elements: (
   'header': (
-    'padding': 10px 10px,
+    'padding': 10px,
   ),
   'aside': (
-    'padding': 10px 5px,
+    'width': 100px,
+    'padding': 5px 10px 5px 10px,
   ),
   'main': (
     'padding': (
-      'large': 0px 10px 0px 0px,
-      'medium': 0px 10px 0px 0px,
-      'small': 0px 10px 0px 10px,
+      'large': 5px 10px 5px 0px,
+      'medium': 5px 10px 5px 0px,
+      'small': 0px 10px 10px 10px,
     ),
   ),
   'scaffold': (
-    'gap': 5px,
+    'gap': 10px,
   ),
 );

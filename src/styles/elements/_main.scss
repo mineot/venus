@@ -10,6 +10,8 @@
   $padding-large: map.get($padding, 'large');
 
   flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
 
   @include responsive.responsive(
     $large: (

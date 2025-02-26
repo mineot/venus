@@ -10,11 +10,13 @@ body {
   padding: 0;
   width: 100vw;
   height: 100vh;
-  display: flex;
+  overflow: hidden;
 
   background-image: theme.$bg-texture;
   background-color: theme.$bg-color;
   color: theme.$text-color;
+
+  display: flex;
 
   * {
     flex: 1;
