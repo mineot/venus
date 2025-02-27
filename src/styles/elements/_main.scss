@@ -1,27 +1,29 @@
 @use '~/theme' as theme;
 @use '~util/responsive' as responsive;
-@use 'sass:map';
 
 @mixin main() {
-  $main: map.get(theme.$elements, 'main');
-  $padding: map.get($main, 'padding');
-  $padding-small: map.get($padding, 'small');
-  $padding-medium: map.get($padding, 'medium');
-  $padding-large: map.get($padding, 'large');
-
   flex: 1;
   overflow-x: hidden;
   overflow-y: auto;
 
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 5px;
+
   @include responsive.responsive(
     $large: (
-      padding: $padding-large,
+      padding: 5px 10px 5px 0px,
     ),
     $medium: (
-      padding: $padding-medium,
+      padding: 5px 10px 5px 0px,
     ),
     $small: (
-      padding: $padding-small,
+      padding: 0px 10px 10px 10px,
     )
   );
+
+  * {
+    flex: 0;
+  }
 }

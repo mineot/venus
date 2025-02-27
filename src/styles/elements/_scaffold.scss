@@ -1,16 +1,12 @@
 @use '~/theme' as theme;
-@use '~util/responsive' as responsive;
-@use '~element/header' as header;
 @use '~element/aside' as aside;
+@use '~element/header' as header;
 @use '~element/main' as main;
-@use 'sass:map';
+@use '~util/responsive' as responsive;
 
 @mixin scaffold() {
-  $scaffold: map.get(theme.$elements, 'scaffold');
-  $gap: map.get($scaffold, 'gap');
-
   display: flex;
-  gap: $gap;
+  gap: 10px;
 
   @include responsive.responsive(
     $large: (

@@ -1,10 +1,14 @@
+@forward '~util/fonts';
 @forward '~util/scrollbar';
 
-@use '~element/scaffold' as scaffold;
+@forward '~tag/h';
+
 @use '~/theme' as theme;
+@use '~element/scaffold' as scaffold;
 
 * {
   box-sizing: border-box;
+  font-family: theme.$font-family;
 }
 
 body {
@@ -13,12 +17,12 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
 
   background-image: theme.$bg-texture;
   background-color: theme.$bg-color;
   color: theme.$text-color;
-
-  display: flex;
 
   * {
     flex: 1;

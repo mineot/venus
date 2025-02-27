@@ -1,12 +1,11 @@
 @use '~/theme' as theme;
 @use 'sass:color';
-@use 'sass:map';
 
 @mixin glassEffect() {
-  $color: map.get(theme.$glass, 'color');
-  $lightness: map.get(theme.$glass, 'lightness');
-  $opacity: map.get(theme.$glass, 'opacity');
-  $blur: map.get(theme.$glass, 'blur');
+  $color: theme.$bg-color;
+  $lightness: 40%;
+  $opacity: 0.1;
+  $blur: 2px;
 
   background: rgba(color.adjust($color, $lightness: $lightness), $opacity);
   backdrop-filter: blur($blur);

@@ -2,37 +2,8 @@ $bg-texture: url('/assets/texture.png');
 $bg-color: #000;
 $text-color: #fff;
 
-$glass: (
-  'color': $bg-color,
-  'lightness': 40%,
-  'opacity': 0.1,
-  'blur': 2px,
-);
+$primary-color: gold;
+$secondary-color: cyan;
+$tertiary-color: purple;
 
-$scrollbar: (
-  'size': 5px,
-  'color': $text-color,
-  'bar': lightgray,
-  'bar-hover': gray,
-  'cursor': ns-resize,
-);
-
-$elements: (
-  'header': (
-    'padding': 10px,
-  ),
-  'aside': (
-    'width': 100px,
-    'padding': 5px 10px 5px 10px,
-  ),
-  'main': (
-    'padding': (
-      'large': 5px 10px 5px 0px,
-      'medium': 5px 10px 5px 0px,
-      'small': 0px 10px 10px 10px,
-    ),
-  ),
-  'scaffold': (
-    'gap': 10px,
-  ),
-);
+$font-family: 'Tomorrow', sans-serif;

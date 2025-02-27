@@ -9,6 +9,7 @@ export default defineConfig({
       '~effect': path.resolve(__dirname, 'src/styles/effects'),
       '~element': path.resolve(__dirname, 'src/styles/elements'),
       '~util': path.resolve(__dirname, 'src/styles/utils'),
+      '~tag': path.resolve(__dirname, 'src/styles/tags'),
     },
   },
 });

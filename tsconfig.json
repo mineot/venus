@@ -28,7 +28,8 @@
       "~mixin/*": ["src/styles/mixins/*"],
       "~effect/*": ["src/styles/mixins/effects/*"],
       "~element/*": ["src/styles/mixins/elements/*"],
-      "~util/*": ["src/styles/mixins/utils/*"]
+      "~util/*": ["src/styles/mixins/utils/*"],
+      "~tag/*": ["src/styles/mixins/tags/*"]
     }
   },
   "include": ["src"]

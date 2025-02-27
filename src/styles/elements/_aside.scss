@@ -1,19 +1,14 @@
 @use '~/theme' as theme;
-@use '~util/responsive' as responsive;
 @use '~effect/glass-effect' as effect;
-@use 'sass:map';
+@use '~util/responsive' as responsive;
 
 @mixin aside() {
-  $aside: map.get(theme.$elements, 'aside');
-  $width: map.get($aside, 'width');
-  $padding: map.get($aside, 'padding');
-
   flex: 0;
-  padding: $padding;
-  width: $width;
-  min-width: $width;
+  height: 100vh;
+  min-width: min-content;
   overflow-x: hidden;
   overflow-y: auto;
+  padding: 5px 10px 5px 10px;
 
   @include effect.glassEffect();
 
