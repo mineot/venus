@@ -1,6 +1,28 @@
+@use '~/theme' as theme;
+@use 'sass:color';
+
 @mixin anchor-tag() {
-  // add icons
-  // build button
+  a {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: smaller;
+    gap: 3px;
+    padding: 2.5px 5px;
+    text-decoration: none;
+
+    color: theme.$secondary-color;
+
+    &:hover {
+      text-decoration: underline;
+      color: color.adjust(theme.$secondary-color, $lightness: -5%);
+    }
+
+    &:active {
+      text-decoration: underline;
+      color: color.adjust(theme.$secondary-color, $lightness: -10%);
+    }
+  }
 }
 
 @include anchor-tag();

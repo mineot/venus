@@ -1,6 +1,9 @@
+@forward 'modules/bootstrap-icons/font/bootstrap-icons.min.css';
 @forward '~util/fonts';
 @forward '~util/scrollbar';
 
+@forward '~tag/anchor';
+@forward '~tag/button';
 @forward '~tag/h';
 
 @use '~/theme' as theme;

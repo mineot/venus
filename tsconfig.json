@@ -29,7 +29,8 @@
       "~effect/*": ["src/styles/mixins/effects/*"],
       "~element/*": ["src/styles/mixins/elements/*"],
       "~util/*": ["src/styles/mixins/utils/*"],
-      "~tag/*": ["src/styles/mixins/tags/*"]
+      "~tag/*": ["src/styles/mixins/tags/*"],
+      "modules/*": ["node_modules/*"]
     }
   },
   "include": ["src"]
