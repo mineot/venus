@@ -1,8 +1,8 @@
 @use '~/theme' as theme;
-@use "~function/colors" as function_colors;
+@use '~function/colors' as function_colors;
 
 @mixin scroolbar() {
-  $color: theme.$tertiary-color;
+  $color: theme.getColor('tertiary');
   $bar: function_colors.lighten($color, 10%);
   $bar-hover: function_colors.lighten($color, 15%);
 

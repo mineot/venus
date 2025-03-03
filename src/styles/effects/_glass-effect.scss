@@ -2,7 +2,7 @@
 @use '~function/colors' as function_colors;
 
 @mixin glassEffect() {
-  $color: theme.$bg-color;
+  $color: theme.getColor('background');
   $lightness: 40%;
   $opacity: 0.1;
   $blur: 2px;

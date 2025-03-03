@@ -2,22 +2,22 @@
 @use '~function/colors' as function_colors;
 
 @mixin h-tags() {
+  $color: theme.getColor('primary');
   $elements: h1, h2, h3, h4, h5, h6;
-  $size: 2em;
   $scale: 0.2;
-  $small_lightness: 20%;
+  $size: 2em;
+  $small: 20%;
 
   @each $element in $elements {
     #{$element} {
+      color: $color;
       display: flex;
       flex-direction: column;
+      font-size: $size;
       margin: 0;
 
-      color: theme.$primary-color;
-      font-size: $size;
-
       > small {
-        color: function_colors.darken(theme.$primary-color, $small_lightness);
+        color: function_colors.darken($color, $small);
         font-size: smaller;
         font-weight: lighter;
       }

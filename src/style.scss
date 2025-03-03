@@ -1,6 +1,7 @@
 @forward 'modules/bootstrap-icons/font/bootstrap-icons.min.css';
 @forward '~util/fonts';
 @forward '~util/scrollbar';
+@forward '~util/flex';
 
 @forward '~tag/anchor';
 @forward '~tag/button';
@@ -24,8 +25,8 @@ body {
   flex-wrap: wrap;
 
   background-image: theme.$bg-texture;
-  background-color: theme.$bg-color;
-  color: theme.$text-color;
+  background-color: theme.getColor('background');
+  color: theme.getColor('text');
 
   * {
     flex: 1;

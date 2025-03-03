@@ -1,0 +1,17 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+
+  &.row {
+    flex-direction: row;
+  }
+
+  &.column {
+    flex-direction: column;
+  }
+
+  &.padding {
+    padding: 0px 5px;
+  }
+}

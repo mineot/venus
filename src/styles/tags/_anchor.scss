@@ -2,35 +2,42 @@
 @use '~function/colors' as function_colors;
 
 @mixin anchor-tag() {
+  $color: theme.getColor('secondary');
+
+  $active: 10%;
+  $gap: 2px;
+  $hover: 5%;
+  $opacity: 0.5;
+  $shadow: 0px 0px 2px $color;
+
   a {
+    color: $color;
     display: inline-flex;
     flex-direction: row;
     flex-wrap: nowrap;
     font-size: smaller;
-    gap: 3px;
+    gap: $gap;
     text-decoration: none;
-
-    color: theme.$secondary-color;
 
     &:not([disabled]) {
       &:hover {
         text-decoration: underline;
-        color: function_colors.darken(theme.$secondary-color, 5%);
+        color: function_colors.darken($color, $hover);
       }
 
       &:active {
         text-decoration: underline;
-        color: function_colors.darken(theme.$secondary-color, 10%);
+        color: function_colors.darken($color, $active);
       }
 
       &.main {
-        text-shadow: 0px 0px 3px theme.$secondary-color;
+        text-shadow: $shadow;
       }
     }
 
     &[disabled] {
       pointer-events: none;
-      opacity: 0.5;
+      opacity: $opacity;
     }
   }
 }

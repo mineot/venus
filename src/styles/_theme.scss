@@ -1,15 +1,35 @@
+@use 'sass:map';
+
 $bg-texture: url('/assets/texture.png');
-$bg-color: #000;
-$text-color: #fff;
-
-$primary-color: gold;
-$secondary-color: cyan;
-$secondary-inverse-color: #000;
-$tertiary-color: purple;
-
-$danger-color: firebrick;
-$success-color: lime;
-$info-color: deepskyblue;
-$warning-color: orange;
-
 $font-family: 'Tomorrow', sans-serif;
+
+$colors: (
+  background: #000,
+  text: #fff,
+  primary: gold,
+  secondary: cyan,
+  tertiary: purple,
+  danger: firebrick,
+  success: lime,
+  info: deepskyblue,
+  warning: orange,
+  inverse: (
+    background: #fff,
+    text: #000,
+    primary: #000,
+    secondary: #000,
+    tertiary: #fff,
+    danger: #fff,
+    success: #000,
+    info: #000,
+    warning: #000,
+  ),
+);
+
+@function getColor($name, $inverse: false) {
+  @if $inverse {
+    @return map.get(map.get($colors, 'inverse'), $name);
+  } @else {
+    @return map.get($colors, $name);
+  }
+}
