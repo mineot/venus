@@ -1,13 +1,31 @@
 @use '~/theme' as theme;
 @use '~function/colors' as function_colors;
 
+@mixin anchor-color($color, $hover, $active) {
+  color: $color;
+
+  &:not([disabled]) {
+    &:hover {
+      text-decoration: underline;
+      color: function_colors.opacity($color, $hover);
+    }
+
+    &:active {
+      text-decoration: underline;
+      color: function_colors.opacity($color, $active);
+    }
+  }
+}
+
 @mixin anchor-tag() {
   $color: theme.getColor('secondary');
+  $danger-color: theme.getColor('danger');
 
-  $active: 10%;
+  $hover: 0.8;
+  $active: 0.6;
+  $disabled: 0.4;
+
   $gap: 2px;
-  $hover: 5%;
-  $opacity: 0.5;
   $shadow: 0px 0px 2px $color;
 
   a {
@@ -18,26 +36,21 @@
     font-size: smaller;
     gap: $gap;
     text-decoration: none;
+    text-wrap: nowrap;
 
-    &:not([disabled]) {
-      &:hover {
-        text-decoration: underline;
-        color: function_colors.darken($color, $hover);
-      }
+    @include anchor-color($color, $hover, $active);
 
-      &:active {
-        text-decoration: underline;
-        color: function_colors.darken($color, $active);
-      }
+    &.danger {
+      @include anchor-color($danger-color, $hover, $active);
+    }
 
-      &.main {
-        text-shadow: $shadow;
-      }
+    &.main {
+      text-shadow: $shadow;
     }
 
     &[disabled] {
       pointer-events: none;
-      opacity: $opacity;
+      opacity: $disabled;
     }
   }
 }

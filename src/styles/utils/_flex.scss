@@ -1,7 +1,10 @@
+$gap: 5px;
+
 .flex {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  align-items: center;
+  gap: $gap;
 
   &.row {
     flex-direction: row;
@@ -11,7 +14,17 @@
     flex-direction: column;
   }
 
-  &.padding {
-    padding: 0px 5px;
+  &.p {
+    padding: $gap;
+  }
+
+  &.px {
+    padding-left: $gap;
+    padding-right: $gap;
+  }
+
+  &.py {
+    padding-top: $gap;
+    padding-bottom: $gap;
   }
 }

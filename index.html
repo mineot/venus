@@ -9,59 +9,78 @@
   </head>
   <body>
     <section class="scaffold">
-      <header>Header</header>
-      <aside>Aside</aside>
+      <header>
+        <span class="item">Header</span>
+        <i class="item bi bi-list" data-target="#menu"></i>
+      </header>
+      <aside id="menu">Aside</aside>
       <main>
         <h1>
-          Venus h1
+          <span>Venus h1</span>
           <small>Venus h1 small</small>
         </h1>
         <h2>
-          Venus h2
+          <span>Venus h2</span>
           <small>Venus h2 small</small>
         </h2>
         <h3>
-          Venus h3
+          <span>Venus h3</span>
           <small>Venus h3 small</small>
         </h3>
         <h4>
-          Venus h4
-          <small>Venus h2 small</small>
+          <span>Venus h4</span>
+          <small>Venus h4 small</small>
         </h4>
         <h5>
-          Venus h5
+          <span>Venus h5</span>
           <small>Venus h5 small</small>
         </h5>
         <h6>
-          Venus h6
+          <span>Venus h6</span>
           <small>Venus h6 small</small>
         </h6>
-        <div class="flex row padding">
+        <div class="flex row px">
           <button class="main">
             <i class="bi bi-house"></i>
-            Main
+            <span>Main</span>
           </button>
           <button>
             <i class="bi bi-house"></i>
-            Regular
+            <span>Regular</span>
+          </button>
+          <button class="danger">
+            <i class="bi bi-house"></i>
+            <span>Danger</span>
           </button>
           <button disabled>
             <i class="bi bi-house"></i>
-            Disabled
+            <span>Disabled</span>
+          </button>
+          <button class="danger" disabled>
+            <i class="bi bi-house"></i>
+            <span>Danger Disabled</span>
           </button>
         </div>
-        <div class="flex row padding">
+        <div class="flex row px">
           <a href="#" class="main">
             <i class="bi bi-house"></i>
-            Main
+            <span>Main</span>
           </a>
           <a href="#">
             <i class="bi bi-house"></i>
-            Regular
+            <span>Regular</span>
+          </a>
+          <a href="#" class="danger">
+            <i class="bi bi-house"></i>
+            <span>Danger</span>
           </a>
           <a href="#" disabled>
             <i class="bi bi-house"></i>
-            Regular
+            <span>Disabled</span>
+          </a>
+          <a href="#" class="danger" disabled>
+            <i class="bi bi-house"></i>
+            <span>Danger Disabled</span>
           </a>
         </div>
       </main>

@@ -3,10 +3,11 @@
 
 @mixin h-tags() {
   $color: theme.getColor('primary');
+
   $elements: h1, h2, h3, h4, h5, h6;
   $scale: 0.2;
   $size: 2em;
-  $small: 20%;
+  $small: 0.6;
 
   @each $element in $elements {
     #{$element} {
@@ -17,7 +18,7 @@
       margin: 0;
 
       > small {
-        color: function_colors.darken($color, $small);
+        color: function_colors.opacity($color, $small);
         font-size: smaller;
         font-weight: lighter;
       }
