@@ -1,10 +1,11 @@
 @use '~/theme' as theme;
-@use 'sass:color';
+@use '~function/colors' as function_colors;
 
 @mixin h-tags() {
   $elements: h1, h2, h3, h4, h5, h6;
   $size: 2em;
   $scale: 0.2;
+  $small_lightness: 20%;
 
   @each $element in $elements {
     #{$element} {
@@ -16,7 +17,7 @@
       font-size: $size;
 
       > small {
-        color: color.adjust(theme.$primary-color, $lightness: -20%);
+        color: function_colors.darken(theme.$primary-color, $small_lightness);
         font-size: smaller;
         font-weight: lighter;
       }

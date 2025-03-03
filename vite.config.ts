@@ -8,9 +8,10 @@ export default defineConfig({
       '~': path.resolve(__dirname, 'src/styles'),
       '~effect': path.resolve(__dirname, 'src/styles/effects'),
       '~element': path.resolve(__dirname, 'src/styles/elements'),
-      '~util': path.resolve(__dirname, 'src/styles/utils'),
+      '~function': path.resolve(__dirname, 'src/styles/functions'),
       '~tag': path.resolve(__dirname, 'src/styles/tags'),
-      "modules": path.resolve(__dirname, 'node_modules'),
+      '~util': path.resolve(__dirname, 'src/styles/utils'),
+      modules: path.resolve(__dirname, 'node_modules'),
     },
   },
 });

@@ -1,10 +1,10 @@
 @use '~/theme' as theme;
-@use 'sass:color';
+@use "~function/colors" as function_colors;
 
 @mixin scroolbar() {
   $color: theme.$tertiary-color;
-  $bar: color.adjust($color, $lightness: 10%);
-  $bar-hover: color.adjust($color, $lightness: 15%);
+  $bar: function_colors.lighten($color, 10%);
+  $bar-hover: function_colors.lighten($color, 15%);
 
   $border-size: 1px;
   $border-style: solid;

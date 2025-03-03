@@ -1,5 +1,5 @@
 @use '~/theme' as theme;
-@use 'sass:color';
+@use '~function/colors' as function_colors;
 
 @mixin anchor-tag() {
   a {
@@ -8,19 +8,29 @@
     flex-wrap: nowrap;
     font-size: smaller;
     gap: 3px;
-    padding: 2.5px 5px;
     text-decoration: none;
 
     color: theme.$secondary-color;
 
-    &:hover {
-      text-decoration: underline;
-      color: color.adjust(theme.$secondary-color, $lightness: -5%);
+    &:not([disabled]) {
+      &:hover {
+        text-decoration: underline;
+        color: function_colors.darken(theme.$secondary-color, 5%);
+      }
+
+      &:active {
+        text-decoration: underline;
+        color: function_colors.darken(theme.$secondary-color, 10%);
+      }
+
+      &.main {
+        text-shadow: 0px 0px 3px theme.$secondary-color;
+      }
     }
 
-    &:active {
-      text-decoration: underline;
-      color: color.adjust(theme.$secondary-color, $lightness: -10%);
+    &[disabled] {
+      pointer-events: none;
+      opacity: 0.5;
     }
   }
 }

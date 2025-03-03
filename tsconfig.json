@@ -25,11 +25,11 @@
     "paths": {
       "@/*": ["src/*"],
       "~/*": ["src/styles/*"],
-      "~mixin/*": ["src/styles/mixins/*"],
-      "~effect/*": ["src/styles/mixins/effects/*"],
-      "~element/*": ["src/styles/mixins/elements/*"],
-      "~util/*": ["src/styles/mixins/utils/*"],
-      "~tag/*": ["src/styles/mixins/tags/*"],
+      "~effect/*": ["src/styles/effects/*"],
+      "~element/*": ["src/styles/elements/*"],
+      "~function/*": ["src/styles/functions/*"],
+      "~tag/*": ["src/styles/tags/*"],
+      "~util/*": ["src/styles/utils/*"],
       "modules/*": ["node_modules/*"]
     }
   },
