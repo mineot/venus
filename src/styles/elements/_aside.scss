@@ -10,6 +10,14 @@
   overflow-y: auto;
   padding: 5px 10px 5px 10px;
 
+  &.open {
+    display: block;
+    position: absolute;
+    backdrop-filter: blur(20px);
+    z-index: 99999;
+    width: 100vw;
+  }
+
   @include effect.glassEffect();
 
   @include responsive.responsive(
