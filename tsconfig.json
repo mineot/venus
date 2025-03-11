@@ -25,11 +25,6 @@
     "paths": {
       "@/*": ["src/*"],
       "~/*": ["src/styles/*"],
-      "~effect/*": ["src/styles/effects/*"],
-      "~element/*": ["src/styles/elements/*"],
-      "~function/*": ["src/styles/functions/*"],
-      "~tag/*": ["src/styles/tags/*"],
-      "~util/*": ["src/styles/utils/*"],
       "modules/*": ["node_modules/*"]
     }
   },
