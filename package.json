@@ -23,8 +23,9 @@
     "url": "https://github.com/mineot/venus.git"
   },
   "scripts": {
-    "dev": "vite",
-    "devcss": "npx @tailwindcss/cli -i ./src/styles/style.css -o ./src/main.css --watch",
+    "dev": "npm run dev:css & npm run dev:vite", 
+    "dev:vite": "vite",
+    "dev:css": "npx @tailwindcss/cli -i ./src/styles/style.css -o ./src/main.css --watch",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "prepublishOnly": "npm run build"
