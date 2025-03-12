@@ -6,6 +6,7 @@
 }
 
 body {
-  background-color: var(--test);
-  color: #fff;
+  @apply bg-black;
+  @apply text-white;
+  @apply font-sans;
 }
