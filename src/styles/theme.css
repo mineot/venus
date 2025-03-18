@@ -1,4 +1,11 @@
 @theme {
   --color-background: var(--color-black);
   --color-background-inverse: var(--color-white);
+  --color-background-hover: var(--color-slate-900);
+
+  --color-primary: var(--color-yellow-500);
+  --color-primary-inverse: var(--color-black);
+  --color-primary-hover: var(--color-yellow-900);
+
+  --bg-texture: url('/assets/texture.png');
 }

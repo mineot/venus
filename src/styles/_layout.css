@@ -11,17 +11,44 @@ body {
   @apply p-0 m-0;
   @apply w-screen h-screen overflow-hidden;
   @apply flex gap-1 flex-col md:flex-row;
-  @apply bg-background text-background-inverse;
+  @apply bg-background text-background-inverse bg-[image:var(--bg-texture)];
 }
 
 body > header {
-  @apply p-2 md:hidden lg:hidden overflow-hidden;
+  @apply flex md:hidden lg:hidden p-2 overflow-hidden;
+  @apply justify-between items-center gap-1;
+  @apply backdrop-blur-xs;
+}
+
+body > header > section {
+  @apply flex-1;
+}
+
+body > header > i {
+  @apply flex md:hidden lg:hidden;
+  @apply text-primary leading-0 text-2xl py-1 px-2 cursor-pointer rounded-md;
+  @apply hover:bg-primary-hover duration-300;
+  @apply active:scale-90 duration-100;
 }
 
 body > aside {
-  @apply px-2 py-1 h-screen min-w-min overflow-x-hidden overflow-y-auto;
+  @apply relative px-2 py-1 h-screen min-w-min overflow-x-hidden overflow-y-auto;
   @apply hidden md:flex lg:flex;
-  @apply flex-0 flex-col;
+  @apply flex-0 flex-col gap-1;
+  @apply backdrop-blur-xs;
+}
+
+body > aside > i {
+  @apply flex md:hidden lg:hidden;
+  @apply absolute top-0 right-0 mt-1 mr-1;
+  @apply text-primary leading-0 text-2xl py-1 px-2 cursor-pointer rounded-md;
+  @apply hover:bg-primary-hover duration-300;
+  @apply active:scale-90 duration-100;
+}
+
+body > aside.open {
+  @apply flex absolute w-screen h-screen top-0 left-0;
+  @apply backdrop-blur-lg;
 }
 
 body > main {
