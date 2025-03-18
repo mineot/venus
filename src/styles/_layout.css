@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  @apply font-mono;
+}
+
+html {
+  @apply w-screen h-screen;
+}
+
+body {
+  @apply p-0 m-0;
+  @apply w-screen h-screen overflow-hidden;
+  @apply flex gap-1 flex-col md:flex-row;
+  @apply bg-background text-background-inverse;
+}
+
+body > header {
+  @apply p-2 md:hidden lg:hidden overflow-hidden;
+}
+
+body > aside {
+  @apply px-2 py-1 h-screen min-w-min overflow-x-hidden overflow-y-auto;
+  @apply hidden md:flex lg:flex;
+  @apply flex-0 flex-col;
+}
+
+body > main {
+  @apply px-2 sm:pb-1 lg:py-1 md:py-1;
+  @apply h-screen overflow-x-hidden overflow-y-auto;
+  @apply flex-1;
+}

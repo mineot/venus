@@ -1,12 +1,4 @@
 @import 'tailwindcss';
+@import './_layout.css';
 @import './theme.css';
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  @apply bg-black;
-  @apply text-white;
-  @apply font-mono;
-}

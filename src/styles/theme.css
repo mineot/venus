@@ -1,11 +1,4 @@
-@import 'tailwindcss';
-
 @theme {
-  --color-primary: gold;
-  --color-secondary: green;
+  --color-background: var(--color-black);
+  --color-background-inverse: var(--color-white);
 }
-
-/** CSS VARIABLES */
-/* :root {
-  --test: #000;
-} */
