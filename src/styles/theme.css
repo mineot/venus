@@ -1,11 +1,12 @@
 @theme {
-  --color-background: var(--color-black);
-  --color-background-inverse: var(--color-white);
-  --color-background-hover: var(--color-slate-900);
+  --color-background: var(--color-zinc-950);
+  --color-background-inverse: var(--color-zinc-50);
+  --color-background-hover: var(--color-zinc-500);
 
-  --color-primary: var(--color-yellow-500);
-  --color-primary-inverse: var(--color-black);
-  --color-primary-hover: var(--color-yellow-900);
+  --color-primary: var(--color-amber-500);
+  --color-primary-inverse: var(--color-zinc-950);
+  --color-primary-hover: var(--color-amber-700);
 
   --bg-texture: url('/assets/texture.png');
+  --duration-default: 300ms;
 }

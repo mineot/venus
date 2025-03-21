@@ -11,15 +11,14 @@
     <title>Venus</title>
   </head>
   <body>
-    <header>
-      <section>Header</section>
-      <i class="bi bi-list"></i>
-    </header>
-    <aside>
-      <i class="bi bi-x"></i>
-      <section>Aside Content</section>
-    </aside>
-    <main>Main</main>
+    <section class="container centered">
+      <header>Header</header>
+      <main>Main</main>
+      <footer>Footer</footer>
+      <button data-glass="#glass" data-sidebar="#sidebar">Open Glass e SideBar</button>
+    </section>
+    <div id="glass" class="glass"></div>
+    <aside id="sidebar" class="sidebar">Aside</aside>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
