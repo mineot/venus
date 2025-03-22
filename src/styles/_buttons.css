@@ -1,0 +1,44 @@
+button {
+  @apply flex flex-row flex-nowrap items-center justify-center gap-1;
+  @apply px-2 py-1 rounded cursor-pointer;
+  @apply disabled:opacity-50 disabled:pointer-events-none;
+  @apply text-primary-inverse bg-primary;
+  @apply hover:bg-primary-hover hover:duration-300;
+  @apply active:bg-primary-active active:duration-200;
+}
+
+button[role='secondary'] {
+  @apply text-secondary-inverse bg-secondary;
+  @apply hover:bg-secondary-hover hover:duration-300;
+  @apply active:bg-secondary-active active:duration-200;
+}
+
+button[role='tertiary'] {
+  @apply text-tertiary-inverse bg-tertiary;
+  @apply hover:bg-tertiary-hover hover:duration-300;
+  @apply active:bg-tertiary-active active:duration-200;
+}
+
+button[role='success'] {
+  @apply text-success-inverse bg-success;
+  @apply hover:bg-success-hover hover:duration-300;
+  @apply active:bg-success-active active:duration-200;
+}
+
+button[role='danger'] {
+  @apply text-danger-inverse bg-danger;
+  @apply hover:bg-danger-hover hover:duration-300;
+  @apply active:bg-danger-active active:duration-200;
+}
+
+button[role='info'] {
+  @apply text-info-inverse bg-info;
+  @apply hover:bg-info-hover hover:duration-300;
+  @apply active:bg-info-active active:duration-200;
+}
+
+button[role='warning'] {
+  @apply text-warning-inverse bg-warning;
+  @apply hover:bg-warning-hover hover:duration-300;
+  @apply active:bg-warning-active active:duration-200;
+}

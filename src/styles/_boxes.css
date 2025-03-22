@@ -1,0 +1,27 @@
+.box {
+  @apply border-primary border border-solid;
+}
+
+.box.space {
+  @apply p-2;
+}
+
+.box.rounded {
+  @apply rounded-md;
+}
+
+.box.bg {
+  @apply bg-primary/20 hover:bg-primary/30;
+}
+
+.box.shadow {
+  @apply hover:inset-shadow-sm inset-shadow-primary/80;
+}
+
+.box.flex {
+  @apply flex flex-row flex-wrap gap-1;
+}
+
+.box.flex.col {
+  @apply flex-col;
+}

@@ -1,0 +1,25 @@
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background-inverse);
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-background-hover);
+  border-radius: 0px;
+  border: none;
+  cursor: ns-resize;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-background-active);
+}
+
+.scrollable {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-background-hover) var(--color-background-active);
+}

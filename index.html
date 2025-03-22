@@ -11,14 +11,207 @@
     <title>Venus</title>
   </head>
   <body>
-    <section class="container centered">
+    <section class="container">
+      <div class="font-bold text-lg">Main Colors</div>
+      <div class="flex gap-2 flex-col sm:px-1 sm:flex-row sm:items-center">
+        <span class="text-primary">Primary</span>
+        <span class="bg-primary text-primary-inverse">Inverse</span>
+        <span class="text-primary-hover">Hover</span>
+        <span class="text-primary-active">Active</span>
+      </div>
+      <div class="flex gap-2 flex-col sm:px-1 sm:flex-row sm:items-center">
+        <span class="text-secondary">Secondary</span>
+        <span class="bg-secondary text-secondary-inverse">Inverse</span>
+        <span class="text-secondary-hover">Hover</span>
+        <span class="text-secondary-active">Active</span>
+      </div>
+      <div class="flex gap-2 flex-col sm:px-1 sm:flex-row sm:items-center">
+        <span class="text-tertiary">Tertiary</span>
+        <span class="bg-tertiary text-tertiary-inverse">Inverse</span>
+        <span class="text-tertiary-hover">Hover</span>
+        <span class="text-tertiary-active">Active</span>
+      </div>
+      <div class="flex gap-2 flex-col sm:px-1 sm:flex-row sm:items-center">
+        <span class="text-success">Success</span>
+        <span class="bg-success text-success-inverse">Inverse</span>
+        <span class="text-success-hover">Hover</span>
+        <span class="text-success-active">Active</span>
+      </div>
+      <div class="flex gap-2 flex-col sm:px-1 sm:flex-row sm:items-center">
+        <span class="text-danger">Danger</span>
+        <span class="bg-danger text-danger-inverse">Inverse</span>
+        <span class="text-danger-hover">Hover</span>
+        <span class="text-danger-active">Active</span>
+      </div>
+
+      <div class="flex gap-2 flex-col sm:px-1 sm:flex-row sm:items-center">
+        <span class="text-info">Info</span>
+        <span class="bg-info text-info-inverse">Inverse</span>
+        <span class="text-info-hover">Hover</span>
+        <span class="text-info-active">Active</span>
+      </div>
+
+      <div class="flex gap-2 flex-col sm:px-1 sm:flex-row sm:items-center">
+        <span class="text-warning">Warning</span>
+        <span class="bg-warning text-warning-inverse">Inverse</span>
+        <span class="text-warning-hover">Hover</span>
+        <span class="text-warning-active">Active</span>
+      </div>
+
+      <hr />
+
+      <div class="font-bold text-lg">Typography</div>
+      <div class="flex gap-2 flex-col sm:px-1 sm:flex-row sm:items-center">
+        <h1>h1</h1>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <h4>h4</h4>
+        <h5>h5</h5>
+        <h6>h6</h6>
+      </div>
+      <div class="flex gap-2 flex-col sm:px-1 sm:flex-row sm:items-center">
+        <h1><small>h1</small></h1>
+        <h2><small>h2</small></h2>
+        <h3><small>h3</small></h3>
+        <h4><small>h4</small></h4>
+        <h5><small>h5</small></h5>
+        <h6><small>h6</small></h6>
+      </div>
+
+      <hr />
+
+      <div class="font-bold text-lg">Buttons</div>
+      <div class="flex gap-2 flex-col sm:px-1 sm:flex-row sm:items-center">
+        <button type="button">
+          <i class="bi bi-1-square-fill"></i>
+          <span>Primary</span>
+        </button>
+        <button type="button" role="secondary">
+          <i class="bi bi-2-square-fill"></i>
+          <span>Secondary</span>
+        </button>
+        <button type="button" role="tertiary">
+          <i class="bi bi-3-square-fill"></i>
+          <span>Tertiary</span>
+        </button>
+        <button type="button" role="success">
+          <i class="bi bi-check-square-fill"></i>
+          <span>Success</span>
+        </button>
+        <button type="button" role="danger">
+          <i class="bi bi-x-square-fill"></i>
+          <span>Danger</span>
+        </button>
+        <button type="button" role="info">
+          <i class="bi bi-info-square-fill"></i>
+          <span>Info</span>
+        </button>
+        <button type="button" role="warning">
+          <i class="bi bi-exclamation-square-fill"></i>
+          <span>Warning</span>
+        </button>
+      </div>
+      <div class="flex gap-2 flex-col sm:px-1 sm:flex-row sm:items-center">
+        <button type="button" disabled>
+          <i class="bi bi-1-square-fill"></i>
+          <span>Primary</span>
+        </button>
+        <button type="button" role="secondary" disabled>
+          <i class="bi bi-2-square-fill"></i>
+          <span>Secondary</span>
+        </button>
+        <button type="button" role="tertiary" disabled>
+          <i class="bi bi-3-square-fill"></i>
+          <span>Tertiary</span>
+        </button>
+        <button type="button" role="success" disabled>
+          <i class="bi bi-check-square-fill"></i>
+          <span>Success</span>
+        </button>
+        <button type="button" role="danger" disabled>
+          <i class="bi bi-x-square-fill"></i>
+          <span>Danger</span>
+        </button>
+        <button type="button" role="info" disabled>
+          <i class="bi bi-info-square-fill"></i>
+          <span>Info</span>
+        </button>
+        <button type="button" role="warning" disabled>
+          <i class="bi bi-exclamation-square-fill"></i>
+          <span>Warning</span>
+        </button>
+      </div>
+
+      <hr />
+
+      <div class="font-bold text-lg">Anchors</div>
+      <div class="flex gap-2 flex-col sm:px-1 sm:flex-row sm:items-center">
+        <a href="#">
+          <i class="bi bi-1-square-fill"></i>
+          <span>Primary</span>
+        </a>
+        <a href="#" role="secondary">
+          <i class="bi bi-2-square-fill"></i>
+          <span>Secondary</span>
+        </a>
+        <a href="#" role="tertiary">
+          <i class="bi bi-3-square-fill"></i>
+          <span>Tertiary</span>
+        </a>
+        <a href="#" role="success">
+          <i class="bi bi-check-square-fill"></i>
+          <span>Success</span>
+        </a>
+        <a href="#" role="danger">
+          <i class="bi bi-x-square-fill"></i>
+          <span>Danger</span>
+        </a>
+        <a href="#" role="info">
+          <i class="bi bi-info-square-fill"></i>
+          <span>Info</span>
+        </a>
+        <a href="#" role="warning">
+          <i class="bi bi-exclamation-square-fill"></i>
+          <span>Warning</span>
+        </a>
+      </div>
+
+      <hr />
+
+      <div class="font-bold text-lg">Boxes</div>
+      <div class="flex gap-2 flex-col sm:px-1 sm:flex-row sm:items-center">
+        <div class="box">Simple</div>
+        <div class="box space">With Space</div>
+        <div class="box rounded">Rounded</div>
+        <div class="box bg">Background</div>
+        <div class="box shadow">Shadow</div>
+        <div class="box flex">
+          <span>Primary</span>
+          <span>Box</span>
+          <span>Flex</span>
+        </div>
+        <div class="box flex col">
+          <span>Primary </span>
+          <span>Box</span>
+          <span>Flex</span>
+          <span>Col</span>
+        </div>
+      </div>
+
+      <hr />
+
+      <div>
+        <button data-glass="#glass" data-sidebar="#sidebar">Open Glass and SideBar</button>
+      </div>
+
       <header>Header</header>
       <main>Main</main>
       <footer>Footer</footer>
-      <button data-glass="#glass" data-sidebar="#sidebar">Open Glass e SideBar</button>
     </section>
+
     <div id="glass" class="glass"></div>
-    <aside id="sidebar" class="sidebar">Aside</aside>
+    <aside id="sidebar" class="sidebar">Sidebar</aside>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

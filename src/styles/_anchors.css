@@ -1,0 +1,42 @@
+a {
+  @apply p-0 cursor-pointer;
+  @apply text-primary;
+  @apply hover:text-primary-hover hover:duration-300;
+  @apply active:text-primary-active active:duration-200;
+}
+
+a[role='secondary'] {
+  @apply text-secondary;
+  @apply hover:text-secondary-hover hover:duration-300;
+  @apply active:text-secondary-active active:duration-200;
+}
+
+a[role='tertiary'] {
+  @apply text-tertiary;
+  @apply hover:text-tertiary-hover hover:duration-300;
+  @apply active:text-tertiary-active active:duration-200;
+}
+
+a[role='success'] {
+  @apply text-success;
+  @apply hover:text-success-hover hover:duration-300;
+  @apply active:text-success-active active:duration-200;
+}
+
+a[role='danger'] {
+  @apply text-danger;
+  @apply hover:text-danger-hover hover:duration-300;
+  @apply active:text-danger-active active:duration-200;
+}
+
+a[role='info'] {
+  @apply text-info;
+  @apply hover:text-info-hover hover:duration-300;
+  @apply active:text-info-active active:duration-200;
+}
+
+a[role='warning'] {
+  @apply text-warning;
+  @apply hover:text-warning-hover hover:duration-300;
+  @apply active:text-warning-active active:duration-200;
+}
