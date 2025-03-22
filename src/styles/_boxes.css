@@ -2,17 +2,97 @@
   @apply border-primary border border-solid;
 }
 
+.box.secondary {
+  @apply border-secondary;
+}
+
+.box.tertiary {
+  @apply border-tertiary;
+}
+
+.box.success {
+  @apply border-success;
+}
+
+.box.danger {
+  @apply border-danger;
+}
+
+.box.info {
+  @apply border-info;
+}
+
+.box.warning {
+  @apply border-warning;
+}
+
 .box.bg {
   @apply bg-primary/20 duration-200;
   @apply hover:bg-primary/30 hover:duration-200;
 }
 
-.box.shadow {
-  @apply inset-shadow-sm inset-shadow-primary;
+.box.secondary.bg {
+  @apply bg-secondary/20 duration-200;
+  @apply hover:bg-secondary/30 hover:duration-200;
 }
 
-.box.shadow.hover {
+.box.tertiary.bg {
+  @apply bg-tertiary/20 duration-200;
+  @apply hover:bg-tertiary/30 hover:duration-200;
+}
+
+.box.success.bg {
+  @apply bg-success/20 duration-200;
+  @apply hover:bg-success/30 hover:duration-200;
+}
+
+.box.danger.bg {
+  @apply bg-danger/20 duration-200;
+  @apply hover:bg-danger/30 hover:duration-200;
+}
+
+.box.info.bg {
+  @apply bg-info/20 duration-200;
+  @apply hover:bg-info/30 hover:duration-200;
+}
+
+.box.warning.bg {
+  @apply bg-warning/20 duration-200;
+  @apply hover:bg-warning/30 hover:duration-200;
+}
+
+.box.lux {
   @apply inset-shadow-none inset-shadow-primary/80;
+  @apply hover:inset-shadow-sm;
+}
+
+.box.secondary.lux {
+  @apply inset-shadow-none inset-shadow-secondary/80;
+  @apply hover:inset-shadow-sm;
+}
+
+.box.tertiary.lux {
+  @apply inset-shadow-none inset-shadow-tertiary/80;
+  @apply hover:inset-shadow-sm;
+}
+
+.box.success.lux {
+  @apply inset-shadow-none inset-shadow-success/80;
+  @apply hover:inset-shadow-sm;
+}
+
+.box.danger.lux {
+  @apply inset-shadow-none inset-shadow-danger/80;
+  @apply hover:inset-shadow-sm;
+}
+
+.box.info.lux {
+  @apply inset-shadow-none inset-shadow-info/80;
+  @apply hover:inset-shadow-sm;
+}
+
+.box.warning.lux {
+  @apply inset-shadow-none inset-shadow-warning/80;
   @apply hover:inset-shadow-sm;
 }
 
