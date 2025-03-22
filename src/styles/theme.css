@@ -1,4 +1,5 @@
 @theme {
+  --bg-texture: url('/assets/texture.png');
   --color-background: var(--color-zinc-950);
   --color-background-inverse: var(--color-zinc-50);
   --color-primary: var(--color-yellow-500);
@@ -15,10 +16,4 @@
   --color-info-inverse: var(--color-zinc-950);
   --color-warning: var(--color-orange-500);
   --color-warning-inverse: var(--color-zinc-950);
-
-  --bg-texture: url('/assets/texture.png');
-
-  --duration-default: 300ms;
-  --hover-default: 80%;
-  --active-default: 95%;
 }

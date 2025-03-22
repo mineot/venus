@@ -23,7 +23,7 @@ body > .container.centered {
 
 body > .glass {
   @apply absolute w-full h-full z-[-10];
-  @apply opacity-0 scale-95 duration-[var(--duration-default)] pointer-events-none;
+  @apply opacity-0 scale-95 duration-300 pointer-events-none;
   @apply backdrop-blur-xs;
 }
 
@@ -34,7 +34,7 @@ body > .glass.show {
 body > .sidebar {
   @apply absolute top-0 left-0 h-screen min-w-min z-20 px-2 py-1;
   @apply bg-background;
-  @apply -translate-x-full transition-transform duration-[var(--duration-default)] ease-in-out;
+  @apply -translate-x-full transition-transform duration-300 ease-in-out;
 }
 
 body > .sidebar.show {

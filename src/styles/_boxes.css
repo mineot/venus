@@ -2,20 +2,26 @@
   @apply border-primary border border-solid;
 }
 
+.box.bg {
+  @apply bg-primary/20 duration-200;
+  @apply hover:bg-primary/30 hover:duration-200;
+}
+
+.box.shadow {
+  @apply inset-shadow-sm inset-shadow-primary;
+}
+
+.box.shadow.hover {
+  @apply inset-shadow-none inset-shadow-primary/80;
+  @apply hover:inset-shadow-sm;
+}
+
 .box.space {
   @apply p-2;
 }
 
 .box.rounded {
   @apply rounded-md;
-}
-
-.box.bg {
-  @apply bg-primary/20 hover:bg-primary/30;
-}
-
-.box.shadow {
-  @apply hover:inset-shadow-sm inset-shadow-primary/80;
 }
 
 .box.flex {

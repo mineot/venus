@@ -1,32 +1,32 @@
 a {
   @apply p-0 cursor-pointer;
-  @apply hover:duration-[var(--duration-default)];
-  @apply active:duration-[var(--duration-default)];
-  @apply active:scale-[var(--active-default)];
+  @apply hover:duration-300;
+  @apply active:duration-150;
+  @apply active:scale-95;
 
-  @apply text-primary hover:text-primary/[var(--hover-default)];
+  @apply text-primary hover:text-primary/80;
 }
 
 a[role='secondary'] {
-  @apply text-secondary hover:text-secondary/[var(--hover-default)];
+  @apply text-secondary hover:text-secondary/80;
 }
 
 a[role='tertiary'] {
-  @apply text-tertiary hover:text-tertiary/[var(--hover-default)];
+  @apply text-tertiary hover:text-tertiary/80;
 }
 
 a[role='success'] {
-  @apply text-success hover:text-success/[var(--hover-default)];
+  @apply text-success hover:text-success/80;
 }
 
 a[role='danger'] {
-  @apply text-danger hover:text-danger/[var(--hover-default)];
+  @apply text-danger hover:text-danger/80;
 }
 
 a[role='info'] {
-  @apply text-info hover:text-info/[var(--hover-default)];
+  @apply text-info hover:text-info/80;
 }
 
 a[role='warning'] {
-  @apply text-warning hover:text-warning/[var(--hover-default)];
+  @apply text-warning hover:text-warning/80;
 }
