@@ -1,5 +1,10 @@
 .box {
-  @apply border-primary border border-solid;
+  @apply border;
+  @apply border-solid;
+}
+
+.box.primary {
+  @apply border-primary;
 }
 
 .box.secondary {
@@ -26,42 +31,42 @@
   @apply border-warning;
 }
 
-.box.bg {
+.box.primary.fill {
   @apply bg-primary/20 duration-200;
   @apply hover:bg-primary/30 hover:duration-200;
 }
 
-.box.secondary.bg {
+.box.secondary.fill {
   @apply bg-secondary/20 duration-200;
   @apply hover:bg-secondary/30 hover:duration-200;
 }
 
-.box.tertiary.bg {
+.box.tertiary.fill {
   @apply bg-tertiary/20 duration-200;
   @apply hover:bg-tertiary/30 hover:duration-200;
 }
 
-.box.success.bg {
+.box.success.fill {
   @apply bg-success/20 duration-200;
   @apply hover:bg-success/30 hover:duration-200;
 }
 
-.box.danger.bg {
+.box.danger.fill {
   @apply bg-danger/20 duration-200;
   @apply hover:bg-danger/30 hover:duration-200;
 }
 
-.box.info.bg {
+.box.info.fill {
   @apply bg-info/20 duration-200;
   @apply hover:bg-info/30 hover:duration-200;
 }
 
-.box.warning.bg {
+.box.warning.fill {
   @apply bg-warning/20 duration-200;
   @apply hover:bg-warning/30 hover:duration-200;
 }
 
-.box.lux {
+.box.primary.lux {
   @apply inset-shadow-none inset-shadow-primary/80;
   @apply hover:inset-shadow-sm;
 }
@@ -104,10 +109,6 @@
   @apply rounded-md;
 }
 
-.box.flex {
-  @apply flex flex-row flex-wrap gap-1;
-}
-
-.box.flex.col {
-  @apply flex-col;
+.box.lux.on {
+  @apply inset-shadow-sm;
 }

@@ -43,18 +43,29 @@
         'warning',
       ];
 
+      function generateIcon(name) {
+        const icon = document.createElement('i');
+        icon.classList.add('bi');
+        icon.classList.add(`bi-${name}`);
+        return icon;
+      }
+
+      function generateSpan(text) {
+        const span = document.createElement('span');
+        span.textContent = text;
+        return span;
+      }
+
       function generateColors(panel) {
         for (const color of colorList) {
-          const span = document.createElement('span');
+          const span = generateSpan(color);
           span.classList.add(`text-${color}`);
-          span.textContent = color;
           panel.appendChild(span);
 
-          const spanInverse = document.createElement('span');
+          const spanInverse = generateSpan(`${color}-inverse`);
           spanInverse.classList.add('px-2');
           spanInverse.classList.add(`bg-${color}`);
           spanInverse.classList.add(`text-${color}-inverse`);
-          spanInverse.textContent = `${color}-inverse`;
           panel.appendChild(spanInverse);
         }
       }
@@ -77,18 +88,11 @@
 
       function generateAnchors(panel) {
         for (const color of colorList) {
-          const icon = document.createElement('i');
-          icon.classList.add('bi');
-          icon.classList.add('bi-link-45deg');
-
-          const span = document.createElement('span');
-          span.textContent = color;
-
           const a = document.createElement('a');
           a.classList.add(color);
           a.href = '#';
-          a.appendChild(icon);
-          a.appendChild(span);
+          a.appendChild(generateIcon('link-45deg'));
+          a.appendChild(generateSpan(color));
           panel.appendChild(a);
         }
       }
@@ -97,14 +101,65 @@
         for (const color of colorList) {
           const button = document.createElement('button');
           button.classList.add(color);
-          button.textContent = color;
+          button.appendChild(generateIcon('bullseye'));
+          button.appendChild(generateSpan(color));
           panel.appendChild(button);
 
           const buttonDisabled = document.createElement('button');
           buttonDisabled.classList.add(color);
-          buttonDisabled.textContent = `${color}-disabled`;
           buttonDisabled.setAttribute('disabled', 'true');
+          buttonDisabled.appendChild(generateIcon('ban-fill'));
+          buttonDisabled.appendChild(generateSpan(`${color}-disabled`));
           panel.appendChild(buttonDisabled);
+        }
+      }
+
+      function generateSingleBoxes(panel) {
+        for (const color of colorList) {
+          const div = document.createElement('div');
+          div.classList.add('box');
+          div.classList.add(color);
+          div.textContent = color;
+          panel.appendChild(div);
+        }
+        return panel;
+      }
+
+      function generateSpaceBoxes(panel) {
+        const singles = generateSingleBoxes(panel);
+        for (const child of singles.children) {
+          child.classList.add('space');
+        }
+        return panel;
+      }
+
+      function generateRoundedBoxes(panel) {
+        const singles = generateSpaceBoxes(panel);
+        for (const child of singles.children) {
+          child.classList.add('rounded');
+        }
+        return panel;
+      }
+
+      function generateFillBoxes(panel) {
+        const singles = generateSpaceBoxes(panel);
+        for (const child of singles.children) {
+          child.classList.add('fill');
+        }
+      }
+
+      function generateLuxBoxes(panel) {
+        const singles = generateSpaceBoxes(panel);
+        for (const child of singles.children) {
+          child.classList.add('lux');
+        }
+        return panel;
+      }
+
+      function generateLuxOnBoxes(panel) {
+        const singles = generateLuxBoxes(panel);
+        for (const child of singles.children) {
+          child.classList.add('on');
         }
       }
 
@@ -141,6 +196,7 @@
 
       const triggers = createPanel('Triggers');
       const triggerSidebar = document.createElement('button');
+      triggerSidebar.classList.add('primary');
       triggerSidebar.textContent = 'Trigger Sidebar';
       triggerSidebar.setAttribute('data-trigger-sidebar', '1');
       triggers.appendChild(triggerSidebar);
@@ -156,6 +212,24 @@
 
       const buttons = createPanel('Buttons');
       generateButtons(buttons);
+
+      const singleBoxes = createPanel('Single Boxes');
+      generateSingleBoxes(singleBoxes);
+
+      const spaceBoxes = createPanel('Boxes with Space Around');
+      generateSpaceBoxes(spaceBoxes);
+
+      const roundedBoxes = createPanel('Boxes with Rounded Corners (+Space Around)');
+      generateRoundedBoxes(roundedBoxes);
+
+      const fillBoxes = createPanel('Boxes with Background (+Space Around)');
+      generateFillBoxes(fillBoxes);
+
+      const luxBoxes = createPanel('Boxes with Inset Lights (+Space Around)');
+      generateLuxBoxes(luxBoxes);
+
+      const luxOnBoxes = createPanel('Boxes with Inset Lights On (+Space Around)');
+      generateLuxOnBoxes(luxOnBoxes);
     </script>
   </body>
 </html>
