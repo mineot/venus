@@ -11,46 +11,31 @@ h1 {
   @apply text-4xl;
 }
 
-h1 > small {
-  @apply font-thin;
-}
-
 h2 {
   @apply text-3xl;
-}
-
-h2 > small {
-  @apply font-thin;
 }
 
 h3 {
   @apply text-2xl;
 }
 
-h3 > small {
-  @apply font-thin;
-}
-
 h4 {
   @apply text-xl;
-}
-
-h4 > small {
-  @apply font-thin;
 }
 
 h5 {
   @apply text-lg;
 }
 
-h5 > small {
-  @apply font-thin;
-}
-
 h6 {
   @apply text-base;
 }
 
+h1 > small,
+h2 > small,
+h3 > small,
+h4 > small,
+h5 > small,
 h6 > small {
   @apply font-thin;
 }

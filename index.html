@@ -24,26 +24,51 @@
     <script>
       /* Generate Examples only */
 
+      function generateTypographies(panel) {
+        const tipografies = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
+
+        for (const tipografia of tipografies) {
+          const normal = document.createElement(tipografia);
+          normal.textContent = tipografia;
+          panel.append(normal);
+
+          const thin = document.createElement(tipografia);
+          const small = document.createElement('small');
+          small.textContent = tipografia;
+          thin.append(small);
+          panel.append(thin);
+        }
+      }
+
       function createPanel(title) {
         const panel = document.createElement('div');
         panel.classList.add('flex');
         panel.classList.add('flex-col');
         panel.classList.add('flex-wrap');
-        panel.classList.add('gap-2');
+        panel.classList.add('gap-1');
 
         const span = document.createElement('span');
         span.classList.add('font-bold');
         span.classList.add('text-xl');
+        span.classList.add('mt-6');
         span.textContent = title;
         panel.appendChild(span);
 
         const line = document.createElement('hr');
+        line.classList.add('mb-3');
         panel.appendChild(line);
+
+        const div = document.createElement('div');
+        div.classList.add('flex');
+        div.classList.add('flex-row');
+        div.classList.add('flex-wrap');
+        div.classList.add('gap-2');
+        panel.appendChild(div);
 
         const bodyContent = document.querySelector('.body-content');
         bodyContent?.appendChild(panel);
 
-        return panel;
+        return div;
       }
 
       const triggers = createPanel('Triggers');
@@ -51,6 +76,9 @@
       triggerSidebar.textContent = 'Trigger Sidebar';
       triggerSidebar.setAttribute('data-trigger-sidebar', '1');
       triggers.append(triggerSidebar);
+
+      const typographies = createPanel('Typographies');
+      generateTypographies(typographies);
     </script>
   </body>
 </html>
