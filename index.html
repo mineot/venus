@@ -75,6 +75,24 @@
         }
       }
 
+      function generateAnchors(panel) {
+        for (const color of colorList) {
+          const icon = document.createElement('i');
+          icon.classList.add('bi');
+          icon.classList.add('bi-link-45deg');
+
+          const span = document.createElement('span');
+          span.textContent = color;
+
+          const a = document.createElement('a');
+          a.classList.add(color);
+          a.href = '#';
+          a.appendChild(icon);
+          a.appendChild(span);
+          panel.appendChild(a);
+        }
+      }
+
       function createPanel(title) {
         const panel = document.createElement('div');
         panel.classList.add('flex');
@@ -117,6 +135,9 @@
 
       const typographies = createPanel('Typographies');
       generateTypographies(typographies);
+
+      const anchors = createPanel('Anchors');
+      generateAnchors(anchors);
     </script>
   </body>
 </html>

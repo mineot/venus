@@ -3,30 +3,32 @@ a {
   @apply hover:duration-300;
   @apply active:duration-150;
   @apply active:scale-95;
+}
 
+a.primary {
   @apply text-primary hover:text-primary/80;
 }
 
-a[role='secondary'] {
+a.secondary {
   @apply text-secondary hover:text-secondary/80;
 }
 
-a[role='tertiary'] {
+a.tertiary {
   @apply text-tertiary hover:text-tertiary/80;
 }
 
-a[role='success'] {
+a.success {
   @apply text-success hover:text-success/80;
 }
 
-a[role='danger'] {
+a.danger {
   @apply text-danger hover:text-danger/80;
 }
 
-a[role='info'] {
+a.info {
   @apply text-info hover:text-info/80;
 }
 
-a[role='warning'] {
+a.warning {
   @apply text-warning hover:text-warning/80;
 }
