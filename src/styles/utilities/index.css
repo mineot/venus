@@ -1,0 +1,3 @@
+@utility inset-shadow-all {
+  @apply inset-shadow-[0_0px_7px];
+}
