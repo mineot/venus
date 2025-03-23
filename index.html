@@ -22,7 +22,42 @@
     <script type="module" src="/src/main.ts"></script>
 
     <script>
-      /* Generate Examples only */
+      /**
+       * @preserve
+       * text-primary text-primary-inverse bg-primary
+       * text-secondary text-secondary-inverse bg-secondary
+       * text-tertiary text-tertiary-inverse bg-tertiary
+       * text-success text-success-inverse bg-success
+       * text-danger text-danger-inverse bg-danger
+       * text-info text-info-inverse bg-info
+       * text-warning text-warning-inverse bg-warning
+       */
+
+      const colorList = [
+        'primary',
+        'secondary',
+        'tertiary',
+        'success',
+        'danger',
+        'info',
+        'warning',
+      ];
+
+      function generateColors(panel) {
+        for (const color of colorList) {
+          const span = document.createElement('span');
+          span.classList.add(`text-${color}`);
+          span.textContent = color;
+          panel.appendChild(span);
+
+          const spanInverse = document.createElement('span');
+          spanInverse.classList.add('px-2');
+          spanInverse.classList.add(`bg-${color}`);
+          spanInverse.classList.add(`text-${color}-inverse`);
+          spanInverse.textContent = `${color}-inverse`;
+          panel.appendChild(spanInverse);
+        }
+      }
 
       function generateTypographies(panel) {
         const tipografies = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
@@ -30,13 +65,13 @@
         for (const tipografia of tipografies) {
           const normal = document.createElement(tipografia);
           normal.textContent = tipografia;
-          panel.append(normal);
+          panel.appendChild(normal);
 
           const thin = document.createElement(tipografia);
           const small = document.createElement('small');
           small.textContent = tipografia;
-          thin.append(small);
-          panel.append(thin);
+          thin.appendChild(small);
+          panel.appendChild(thin);
         }
       }
 
@@ -75,7 +110,10 @@
       const triggerSidebar = document.createElement('button');
       triggerSidebar.textContent = 'Trigger Sidebar';
       triggerSidebar.setAttribute('data-trigger-sidebar', '1');
-      triggers.append(triggerSidebar);
+      triggers.appendChild(triggerSidebar);
+
+      const colors = createPanel('Colors');
+      generateColors(colors);
 
       const typographies = createPanel('Typographies');
       generateTypographies(typographies);
