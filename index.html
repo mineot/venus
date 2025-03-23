@@ -93,6 +93,21 @@
         }
       }
 
+      function generateButtons(panel) {
+        for (const color of colorList) {
+          const button = document.createElement('button');
+          button.classList.add(color);
+          button.textContent = color;
+          panel.appendChild(button);
+
+          const buttonDisabled = document.createElement('button');
+          buttonDisabled.classList.add(color);
+          buttonDisabled.textContent = `${color}-disabled`;
+          buttonDisabled.setAttribute('disabled', 'true');
+          panel.appendChild(buttonDisabled);
+        }
+      }
+
       function createPanel(title) {
         const panel = document.createElement('div');
         panel.classList.add('flex');
@@ -138,6 +153,9 @@
 
       const anchors = createPanel('Anchors');
       generateAnchors(anchors);
+
+      const buttons = createPanel('Buttons');
+      generateButtons(buttons);
     </script>
   </body>
 </html>
