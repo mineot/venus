@@ -1,3 +1,11 @@
+* {
+  @apply box-border font-sans;
+}
+
+html {
+  @apply w-screen h-screen;
+}
+
 ::-webkit-scrollbar {
   width: 4px;
   height: 4px;

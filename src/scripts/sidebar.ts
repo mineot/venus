@@ -1,16 +1,18 @@
-const sidebarTrigger = document.querySelector('[data-glass][data-sidebar]');
+const triggerSidebar = document.querySelector('[data-trigger-sidebar]');
 
-if (sidebarTrigger) {
-  const sidebar = document.querySelector(sidebarTrigger.getAttribute('data-sidebar')!);
-  const glass = document.querySelector(sidebarTrigger.getAttribute('data-glass')!);
+if (triggerSidebar) {
+  const sidebar = document.querySelector('.sidebar');
+  const backdropGlass = document.querySelector('.backdrop-glass');
 
-  sidebarTrigger.addEventListener('click', () => {
-    sidebar?.classList.toggle('show');
-    glass?.classList.toggle('show');
-  });
+  if (sidebar && backdropGlass) {
+    triggerSidebar.addEventListener('click', () => {
+      sidebar.classList.toggle('show');
+      backdropGlass.classList.toggle('show');
+    });
 
-  glass?.addEventListener('click', () => {
-    sidebar?.classList.remove('show');
-    glass?.classList.remove('show');
-  });
+    backdropGlass.addEventListener('click', () => {
+      sidebar.classList.remove('show');
+      backdropGlass.classList.remove('show');
+    });
+  }
 }

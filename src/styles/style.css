@@ -1,10 +1,8 @@
 @import 'tailwindcss';
-
 @import './theme.css';
-@import './scrollbar.css';
+@import './layouts/index.css';
 
-@import './_anchors.css';
-@import './_buttons.css';
-@import './_h.css';
-@import './_layout.css';
-@import './_boxes.css';
+/* @import './utilities/anchors.css';
+@import './utilities/buttons.css';
+@import './utilities/h.css';
+@import './utilities/boxes.css'; */

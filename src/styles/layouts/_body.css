@@ -1,0 +1,23 @@
+body {
+  @apply p-0 m-0;
+  @apply w-screen h-screen;
+  @apply overflow-hidden;
+
+  @apply flex flex-col items-center justify-center;
+
+  @apply bg-background text-background-inverse;
+  @apply bg-[image:var(--bg-texture)];
+}
+
+body > .body-content {
+  @apply h-screen w-screen p-2;
+  @apply overflow-x-hidden overflow-y-auto;
+
+  @apply max-w-3xl;
+
+  @apply flex flex-col gap-2;
+}
+
+body > .body-content.content-centered {
+  @apply items-center justify-center;
+}

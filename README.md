@@ -27,6 +27,25 @@ To compile Venus, you’ll need:
 
 ---
 
+## 🎨 Creating Your Own Theme
+
+To customize the look and feel of your project using Venus, you can easily build your own theme.
+
+1. Clone this repository locally.
+2. Create a new branch for your theme version.
+3. Edit the file `src/styles/theme.css` to define your custom color palette, variables, and visual identity.
+
+Once your edits are ready, run the following commands **in separate terminals**:
+
+This way, you'll see your changes live as you adjust the theme.
+
+```bash
+npm run dev:css   # Watches and builds TailwindCSS styles in real time
+npm run dev:vite  # Starts Vite's dev server for preview
+```
+
+---
+
 ## 🛠️ Installation & Usage
 
 To generate the ready-to-use files, run the build command:
@@ -59,13 +78,11 @@ You can include the files in your HTML like this:
 TailwindCSS is powerful, but it can become verbose in projects that share a consistent visual identity.  
 **Venus CSS** was created to encapsulate those patterns, speed up development, and maintain a unified style with less effort — while leveraging the best of what Tailwind offers.
 
-
 ---
 
 ## 📘 Documentation
 
 For detailed usage examples and integration tips, check out the [Documentation](./DOCUMENTATION.md).
-
 
 ---
 
@@ -73,4 +90,3 @@ For detailed usage examples and integration tips, check out the [Documentation](
 
 This project is licensed under the **Apache License 2.0**.  
 For more information, see the `LICENSE` file.
-```

@@ -1,0 +1,9 @@
+body > .backdrop-glass {
+  @apply absolute w-full h-full z-[-10];
+  @apply opacity-0 scale-95 duration-300 pointer-events-none;
+  @apply backdrop-blur-md;
+}
+
+body > .backdrop-glass.show {
+  @apply z-10 opacity-100 scale-100 pointer-events-auto;
+}
