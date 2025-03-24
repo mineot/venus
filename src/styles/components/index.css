@@ -1,4 +1,6 @@
 @import './_h.css';
 @import './_anchors.css';
 @import './_buttons.css';
-@import './_boxes.css';
+@import './_box_simple.css';
+@import './_box_fill.css';
+@import './_box_lux.css';

@@ -1,10 +1,13 @@
+/* BASE CONFIGURATION */
 a {
   @apply p-0 cursor-pointer;
   @apply hover:duration-300;
+
+  @apply active:saturate-[.45];
   @apply active:duration-150;
-  @apply active:scale-95;
 }
 
+/* VARIANTS */
 a.primary {
   @apply text-primary hover:text-primary/80;
 }

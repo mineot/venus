@@ -1,0 +1,43 @@
+/* BASE CONFIGURATION */
+.box {
+  @apply border;
+  @apply border-solid;
+}
+
+/* APPENDS */
+.box.space {
+  @apply p-2;
+}
+
+.box.rounded {
+  @apply rounded-md;
+}
+
+/* VARIANTS */
+.box.primary {
+  @apply border-primary;
+}
+
+.box.secondary {
+  @apply border-secondary;
+}
+
+.box.tertiary {
+  @apply border-tertiary;
+}
+
+.box.success {
+  @apply border-success;
+}
+
+.box.danger {
+  @apply border-danger;
+}
+
+.box.info {
+  @apply border-info;
+}
+
+.box.warning {
+  @apply border-warning;
+}

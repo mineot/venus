@@ -1,0 +1,35 @@
+/* VARIANTS */
+.box.primary.fill {
+  @apply bg-primary/20 duration-200;
+  @apply hover:bg-primary/30 hover:duration-200;
+}
+
+.box.secondary.fill {
+  @apply bg-secondary/20 duration-200;
+  @apply hover:bg-secondary/30 hover:duration-200;
+}
+
+.box.tertiary.fill {
+  @apply bg-tertiary/20 duration-200;
+  @apply hover:bg-tertiary/30 hover:duration-200;
+}
+
+.box.success.fill {
+  @apply bg-success/20 duration-200;
+  @apply hover:bg-success/30 hover:duration-200;
+}
+
+.box.danger.fill {
+  @apply bg-danger/20 duration-200;
+  @apply hover:bg-danger/30 hover:duration-200;
+}
+
+.box.info.fill {
+  @apply bg-info/20 duration-200;
+  @apply hover:bg-info/30 hover:duration-200;
+}
+
+.box.warning.fill {
+  @apply bg-warning/20 duration-200;
+  @apply hover:bg-warning/30 hover:duration-200;
+}

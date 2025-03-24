@@ -82,7 +82,7 @@ TailwindCSS is powerful, but it can become verbose in projects that share a cons
 
 ## 📘 Documentation
 
-For detailed usage examples and integration tips, check out the [Documentation](./DOCUMENTATION.md).
+For detailed usage examples and integration tips, check out the [Documentation](./doc/documentation.md).
 
 ---
 
